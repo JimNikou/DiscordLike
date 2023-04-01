@@ -4,8 +4,12 @@
   "description": "An alterative to Discord, or so called DiscordLike made by students",
   "main": "script.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jim Nikou and Konstantinos Mokas",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.2.1"
+  }
 }
