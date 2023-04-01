@@ -2,18 +2,29 @@
  <html>
  <head>
     <meta charset="UTF-8" />
-    <meta
+    <!--<meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
+    
     <meta
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
-    />
+    />-->
      <title>Side Navigation Bar</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+     
      <link rel="stylesheet" type="text/css" href="stylesheet.css">
  </head>
  <body>
+  <style>
+    body{
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
      <div id="sidebar">
          <button id="toggle-btn"><img src="menu-icon.png"></button>
          <ul>
@@ -22,9 +33,11 @@
              <li><a href="#">Contact</a></li>
          </ul>
      </div>
+     <p id="info">test akdsjfbdbshibshj  ds iusdhviua dvds </p>
  
-     <script src="nav-bar.js"></script>
+     <script src="./js/nav-bar.js"></script>
      <script src="./renderer.js"></script>
+
  </body>
  </html>
  

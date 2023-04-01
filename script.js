@@ -1,20 +1,26 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
+const Notifications = require('./js/notifications.js');
 
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 820,
     height: 550,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(__dirname, 'js/preload.js'),
     },
   });
 
   win.loadFile('index.html');
 };
 
+
+
 app.whenReady().then(() => {
   createWindow();
+  
+  
+  Notifications.show('Basic Notification', 'Notification from the Main process')
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
