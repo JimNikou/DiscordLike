@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@font-face {
+	font-family: 'Orbitron';
+	src: url('../Orbitron/Orbitron-Regular.ttf') format('truetype');
+  }
 body {
 	margin: 0;
 	padding: 0;
+	
 }
 
 #sidebar {
 	position: fixed;
 	top: 0;
-	left: -160px;
+	left: -150px;
 	width: 200px;
 	height: 100%;
-	background: #333;
+	background: #080402;
 	color: #fff;
 	transition: all 0.5s ease-in-out;
+	font-family: 'Orbitron', sans-serif;
 }
 
 #sidebar ul {
@@ -43,40 +50,81 @@ body {
 	left: -60px;
 }
 
-#toggle-btn {
-	position: absolute;
-	top: 5px;
-	right: -45px;
-	padding: 10px;
-	background-color: #333;
-	color: #fff;
-	border: none;
-	border-radius: 50%;
-	cursor: pointer;
-	z-index: 999;
-	transition: all 0.5s ease-in-out;
-}
 
-#toggle-btn img {
-	width: 20px;
-	height: 20px;
-}
 
-#close-btn {
+
+
+  .menu-btn-1 {
 	position: absolute;
-	top: 10px;
+	top: 0;
 	right: 10px;
-	padding: 5px;
-	background-color: transparent;
-	color: #fff;
-	border: none;
+	height: 28px;
+	width: 38px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .sidebar-wrapper ul {
+	margin-top: 40px;
+  }  
+  
+
+.menu-btn-1 span,
+.menu-btn-1 span::before,
+.menu-btn-1 span::after {
+	background: #fff;
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 6px;         
+	margin-top: 13px; 
+
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-#close-btn img {
-	width: 20px;
-	height: 20px;
+.menu-btn-1 span::before {
+	margin-top:-12px;
 }
+
+.menu-btn-1 span::after {
+	margin-top:12px;
+}
+
+.menu-btn-1 span {
+	margin-left: 8px;
+}
+
+.menu-btn-1.active span {
+	background: transparent;
+}
+
+.menu-btn-1.active span::before {
+	margin-top: 0;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.menu-btn-1.active span::after {
+	margin-top: 0;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
 	#sidebar {
@@ -85,3 +133,6 @@ body {
 	}
 
 }
+
+
+
