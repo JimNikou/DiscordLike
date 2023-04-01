@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
+ <html>
+ <head>
     <meta charset="UTF-8" />
     <meta
       http-equiv="Content-Security-Policy"
@@ -10,12 +10,21 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
-  </head>
-  <body>
-    <h1>Hello from Electron renderer hello Nikou!</h1>
-    <p>👋</p>
-    <p id="info"></p>
-  </body>
-  <script src="./renderer.js"></script>
-</html>
+     <title>Side Navigation Bar</title>
+     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+ </head>
+ <body>
+     <div id="sidebar">
+         <button id="toggle-btn"><img src="menu-icon.png"></button>
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Contact</a></li>
+         </ul>
+     </div>
+ 
+     <script src="nav-bar.js"></script>
+     <script src="./renderer.js"></script>
+ </body>
+ </html>
+ 
