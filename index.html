@@ -104,8 +104,120 @@
       </div>
     </div>
 
+    <div class="music-player">
+      <div class="controls">
+        <button id="play-btn" onclick="playPause()"><i class="fa fa-play"></i></button>
+        <button id="mute-btn" onclick="mute()"><i class="fa fa-volume-up"></i></button>
+        <button id="stop-btn" onclick="stop()"><i class="fa fa-stop"></i></button>
+      </div>
+      <div class="progress-bar" onclick="setProgress(event)">
+        <div class="progress"></div>
+        <p class="text_progress">0.0</p>
+      </div>
+      <div class="song-title"></div>
+      <audio id="audio" type="audio/mp3" src="one.mp3"></audio>
+    </div>
+    
+    <script>
+      const audio = document.getElementById('audio');
+      const playBtn = document.getElementById('play-btn');
+      const stopBtn = document.getElementById('stop-btn');
+      const muteBtn = document.getElementById('mute-btn');
+      const songTitle = document.querySelector('.song-title');
+      const progressBar = document.querySelector('.progress');
+      const progressContainer = document.querySelector('.progress-bar');
+      const timeDisplay = document.querySelector('.text_progress');
+      
+      let isPlaying = false;
+      let isMuted = false;
+    
+      function updateProgressBar() {
+        const { currentTime, duration } = audio;
+        progressBar.style.width = `${(currentTime / duration) * 100}%`;
 
+        const currentMinutes = Math.floor(currentTime / 60);
+        const currentSeconds = Math.floor(currentTime % 60);
+        const durationMinutes = Math.floor(duration / 60);
+        const durationSeconds = Math.floor(duration % 60);
 
+        // display current time
+        const currentTimeFormatted = `${currentMinutes}:${currentSeconds < 10 ? '0' + currentSeconds : currentSeconds}`;
+
+        // display duration
+        const durationFormatted = `${durationMinutes}:${durationSeconds < 10 ? '0' + durationSeconds : durationSeconds}`;
+        timeDisplay.innerHTML = `${currentTimeFormatted} / ${durationFormatted}`;
+      }
+    
+      function playPause() {
+        if (!isPlaying) {
+          audio.play();
+          isPlaying = true;
+          playBtn.innerHTML = '<i class="fa fa-pause"></i>';
+        } else {
+          audio.pause();
+          isPlaying = false;
+          playBtn.innerHTML = '<i class="fa fa-play"></i>';
+        }
+      }
+    
+      function mute() {
+        if (!isMuted) {
+          audio.muted = true;
+          isMuted = true;
+          muteBtn.innerHTML = '<i class="fa fa-volume-off"></i>';
+        } else {
+          audio.muted = false;
+          isMuted = false;
+          muteBtn.innerHTML = '<i class="fa fa-volume-up"></i>';
+        }
+      }
+    
+      function stop() {
+        audio.currentTime = 0;
+        audio.pause();
+        isPlaying = false;
+        playBtn.innerHTML = '<i class="fa fa-play"></i>';
+        progressBar.style.width = '0%';
+      }
+    
+      function setProgress(e) {
+        const width = progressContainer.clientWidth;
+        const clickX = e.offsetX;
+        const duration = audio.duration;
+        audio.currentTime = (clickX / width) * duration;
+      }
+    
+      audio.addEventListener('timeupdate', updateProgressBar);
+    
+    </script>
+    <!-- <div class="music-player">
+      <div class="controls">
+        <button id="play-btn" onclick="playPause()"><i class="fa fa-play"></i></button>
+        <button id="mute-btn" onclick="muteSong()"><i class="fa fa-volume-up"></i></button>
+        <button id="stop-btn" onclick="stopSong()"><i class="fa fa-stop"></i></button>
+      </div>
+      <div class="progress-bar" onclick="setProgress(event)">
+        <p id="time-display">0.0</p>
+        <div class="progress"></div>
+      </div>
+      <div class="song-title"></div>
+      <audio id="audio" src="one.mp3" ontimeupdate="updateTime()"></audio>
+    </div>
+
+    <script>
+
+      const audio = document.getElementById('audio');
+      const playBtn = document.getElementById('play-btn');
+      const stopBtn = document.getElementById('stop-btn');
+      const muteBtn = document.getElementById('mute-btn');
+      const songTitle = document.querySelector('.song-title');
+  
+      // set initial state
+      let isPlaying = false;
+      progress = document.getElementById('progress');
+      progressBar = document.getElementById("progress");
+      
+    </script> -->
      <script src="./js/nav-bar.js"></script>
      <script src="./renderer.js"></script>
 
