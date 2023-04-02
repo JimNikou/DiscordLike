@@ -124,20 +124,18 @@ body {
 
 
 
-/* Icons for navigation bar */
+/* ---------- Icons for navigation bar ---------- */
 
 .home_icon i {
 	position: relative;
-	left: 59%;
-	height: 15px;
-	width: 15px;
+	left: 57%;
+	font-size: 25px;
 }
 
 .saved_icon i {
 	position: relative;
-	left: 56%;
-	height: 15px;
-	width: 15px;
+	left: 55%;
+	font-size: 20px;
 }
 
 .bookmarked_icon i {
@@ -219,42 +217,42 @@ body {
 	/* icons for navigation bar*/
 	.home_icon i {
 		position: relative;
-		left: 48%;
+		left: 44.5%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.saved_icon i {
 		position: relative;
-		left: 43.5%;
+		left: 42.5%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.bookmarked_icon i {
 		position: relative;
-		left: 11%;
+		left: 9.5%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.search_icon i {
 		position: relative;
-		left: 26%;
+		left: 25%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.about_icon i {
 		position: relative;
-		left: 29%;
+		left: 28%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.contact_icon i {
 		position: relative;
-		left: 34%;
+		left: 33%;
 		height: 15px;
 		width: 15px;
 	}
@@ -306,35 +304,35 @@ body {
 	
 	.saved_icon i {
 		position: relative;
-		left: 56.5%;
+		left: 57.5%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.bookmarked_icon i {
 		position: relative;
-		left: 36%;
+		left: 37%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.search_icon i {
 		position: relative;
-		left: 45.5%;
+		left: 46.5%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.about_icon i {
 		position: relative;
-		left: 47%;
+		left: 48%;
 		height: 15px;
 		width: 15px;
 	}
 	
 	.contact_icon i {
 		position: relative;
-		left: 50%;
+		left: 51%;
 		height: 15px;
 		width: 15px;
 	}
