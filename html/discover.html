@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/discover.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Discover</title>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="menu-btn-1" onclick="menuBtnFunction(this)" draggable="false">
+          <span draggable="false"></span>
+        </div>
+        <ul>
+            <div class="home_icon"><li><a href="#">Home<i class="fa fa-home" aria-hidden="true"></i></a></li></div>
+            <div class="bookmarked_icon"><li><a href="#">Bookmarks<i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
+            <div class="saved_icon"><li><a href="#">Saved<i class="fa fa-save" aria-hidden="true"></i></a></li>
+            <div class="search_icon"><li><a href="#">Discover<i class="fa fa-globe" aria-hidden="true"></i></a></li></div>
+            <div class="about_icon"><li><a href="#">About Us<i class="fa fa-info" aria-hidden="true"></i></a></li>
+            <div class="contact_icon"><li><a href="#">Contact<i class="fa fa-at" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="search_bar">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text">
+    </div>
+    
+    <div class="main" id="main">
+    </div>
+    
+    <script src="../js/load_categories.js"></script>
+    <script src="../js/nav-bar.js"></script>
+    <script src="../renderer.js"></script>
+
+</body>
+</html>
