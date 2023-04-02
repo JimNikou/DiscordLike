@@ -3,6 +3,10 @@
 	font-family: 'Orbitron';
 	src: url('../Orbitron/Orbitron-Regular.ttf') format('truetype');
   }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -19,6 +23,7 @@ body {
 	color: #fff;
 	transition: all 0.5s ease-in-out;
 	font-family: 'Orbitron', sans-serif;
+	z-index: 1;
 }
 
 #sidebar ul {
@@ -28,7 +33,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: left;
 	height: 100%;
 }
 
@@ -38,7 +43,7 @@ body {
 }
 
 #sidebar ul li a {
-	color: #fff;
+	color: #d5fc26;
 	text-decoration: none;
 }
 
@@ -49,10 +54,6 @@ body {
 #sidebar.preview {
 	left: -60px;
 }
-
-
-
-
 
   .menu-btn-1 {
 	position: absolute;
@@ -123,18 +124,74 @@ body {
 
 
 
+/* Icons for navigation bar */
+
+.home_icon i {
+	position: relative;
+	left: 59%;
+	height: 15px;
+	width: 15px;
+}
+
+.saved_icon i {
+	position: relative;
+	left: 56%;
+	height: 15px;
+	width: 15px;
+}
+
+.bookmarked_icon i {
+	position: relative;
+	left: 31.5%;
+	height: 15px;
+	width: 15px;
+}
+
+.search_icon i {
+	position: relative;
+	left: 42.5%;
+	height: 15px;
+	width: 15px;
+}
+
+.about_icon i {
+	position: relative;
+	left: 44.5%;
+	height: 15px;
+	width: 15px;
+}
+
+.contact_icon i {
+	position: relative;
+	left:48.5%;
+	height: 15px;
+	width: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 @media screen and (max-width: 900px) {
 	#sidebar {
-		left: -110px;
+		left: -111px;
 	    width: 150px;
+		animation: none;
 	}
 	.menu-btn-1 {
 		position: absolute;
 		top: 0;
-		right: 10px;
+		right: 9.5px;
 		height: 20px;
 		width: 28px;
 		cursor: pointer;
@@ -158,6 +215,130 @@ body {
 		-o-transition: .3s ease-in-out;
 		transition: .3s ease-in-out;
 	}
+
+	/* icons for navigation bar*/
+	.home_icon i {
+		position: relative;
+		left: 48%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.saved_icon i {
+		position: relative;
+		left: 43.5%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.bookmarked_icon i {
+		position: relative;
+		left: 11%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.search_icon i {
+		position: relative;
+		left: 26%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.about_icon i {
+		position: relative;
+		left: 29%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.contact_icon i {
+		position: relative;
+		left: 34%;
+		height: 15px;
+		width: 15px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+	#sidebar {
+		left: -230px;
+	    width: 230px;
+	}
+	.menu-btn-1 {
+		position: absolute;
+		top: 10px;
+		right: -15%;
+		height: 20px;
+		width: 28px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .menu-btn-1 span,
+	.menu-btn-1 span::before,
+	.menu-btn-1 span::after {
+		background: #000;
+		content: '';
+		position: absolute;
+		width: 28px;
+		height: 6px;         
+		padding: 0;
+		margin-top: 13px; 
+
+		-webkit-transition: .3s ease-in-out;
+		-moz-transition: .3s ease-in-out;
+		-o-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+
+	/* icons for navigation bar*/
+	.home_icon i {
+		position: relative;
+		left: 59%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.saved_icon i {
+		position: relative;
+		left: 56.5%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.bookmarked_icon i {
+		position: relative;
+		left: 36%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.search_icon i {
+		position: relative;
+		left: 45.5%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.about_icon i {
+		position: relative;
+		left: 47%;
+		height: 15px;
+		width: 15px;
+	}
+	
+	.contact_icon i {
+		position: relative;
+		left: 50%;
+		height: 15px;
+		width: 15px;
+	}
+	
 
 }
 
