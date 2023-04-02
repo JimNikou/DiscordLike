@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @font-face {
 	font-family: 'Orbitron';
-	src: url('../Orbitron/Orbitron-Regular.ttf') format('truetype');
+	src: url('../Orbitron/Orbitron-Regular.ttf') format('truetype'),
+	url('../Yeseva-One/Yeseva-One-Regular.ttf') format('truetype');
   }
-
+  @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 * {
     -webkit-tap-highlight-color: transparent;
 }
 body {
 	margin: 0;
 	padding: 0;
-	
 }
+  
 
 #sidebar {
 	position: fixed;
@@ -126,6 +127,7 @@ body {
 
 /* ---------- Icons for navigation bar ---------- */
 
+
 .home_icon i {
 	position: relative;
 	left: 57%;
@@ -166,16 +168,234 @@ body {
 	width: 15px;
 }
 
+/* Home artist css */
+
+.home_artist{
+	position: absolute;
+	right: 0;
+	top: 10%;
+	/* height: 100px; */
+	/* width: 100px; */
+}
+
+.home_artist .tape-top{
+	position: absolute;
+	top: -15%;
+	left: -15%;
+}
+
+.home_artist .tape-bottom{
+	position: absolute;
+	top: 75%;
+	left: -15%;
+	transform: rotate(270deg);
+}
+
+.main_text{
+	position: absolute;
+	top: 10%;
+	left: 8vw;
+}
+.main_text h3{
+	font-size: 6vw;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-family: 'Yeseva One', cursive;
+}
+.main_text h1{
+	font-size: 1.2vw;
+	color: #5d5d5d;
+	padding-left: 3px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.line_above_text img{
+	width: 26.5vw;
+}
+/* end */
+
+
+/* premium buttons */
+
+.try_premium{
+	position: absolute;
+	top: 33vw;
+	width: 200px;
+	height: 35px;
+	border: 0;
+	background: none;
+	box-shadow: none;
+	border-radius: 0px;
+	background-color: #d5fc26;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 15px;
+	padding-left: 33px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.view_plans{
+	position: absolute;
+	top: 33vw;
+	left: 20vw;
+	width: 200px;
+	height: 35px;
+	background: none;
+	box-shadow: none;
+	border-radius: 0px;
+	background-color: #ffffff;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 15px;
+	padding-left: 38px;
+	text-align: left;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.view_plans img{
+	position: absolute;
+	top: 12%;
+	padding-left: 15px;
+	transform: rotate(45deg);
+	width: 15px;
+}
+
+.try_premium img{
+	position: absolute;
+	top: 12%;
+	padding-left: 15px;
+	transform: rotate(45deg);
+	width: 15px;
+}
+/* end */
 
 
 
 
+/* Vertical bar */
+
+.vertical_latest {
+	background-color: #080402; /* Set a background color for the bar */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transform: rotate(-90deg);
+	text-align: center; /* Center the text in the bar */
+	font-size: 14px; /* Set the font size of the text */
+	font-weight: bold; /* Set the font weight of the text */
+	color: #d5fc26; /* Set the color of the text */
+	position: absolute;
+	right: 27vw;
+	top: 45%;
+	width: 560px;
+	font-family: 'Orbitron', sans-serif;
+  }
+
+/* end */
+
+/* popular artists */
+
+.popular_artists {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+	padding-top: 150vh;
+	padding-left: 8vw;
+	padding-right: 5vw;
+	padding-bottom: 30px;
+  }
+
+  /* Style for the rectangle */
+  .popular_artist {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	height: 400px;
+  }
+  
+  /* Responsive font size */
+  .popular_artist h2 {
+	font-size: 2vw;
+  }
+/* end */
+
+
+.horizontal-line {
+	border-bottom: 1px solid #ccc;
+	opacity: 0.5;
+	width: 90vw;
+	position: absolute;
+	top: 90%;
+	margin-bottom: 10px;
+}
+
+/* secondary text */
+
+.secondary_text{
+	position: absolute;
+	top: 100%;
+	left: 8vw;
+}
+
+.secondary_text h3{
+	font-size: 6vw;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-family: 'Yeseva One', cursive;
+}
+
+.secondary_text_popular{
+	position: absolute;
+	top: 150%;
+	width: 300px;
+	left: 7.8vw;
+}
+
+.secondary_text_popular h2{
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #000;
+	padding-left: 3px;
+	position: absolute;
+	top: 130%;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.secondary_text h1{
+	font-size: 1.2vw;
+	color: #5d5d5d;
+	padding-left: 3px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+/* end */
 
 
 
-
-
-
+  @media screen and (max-width: 1150px) {
+	.vertical_latest {
+		display: none;
+	  }
+	.view_plans{
+		position: absolute;
+		top: 37vw;
+		left: 0;
+	}
+	.popular_artists {
+		display: block;
+		padding-top: 140vh;
+	}
+	.popular_artist{
+		margin-bottom: 30px;
+	}
+	.secondary_text_popular{
+		position: absolute;
+		top: 140%;
+	}
+}
 
 
 
