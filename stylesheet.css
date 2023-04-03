@@ -374,6 +374,12 @@ body {
 /* end */
 
 
+#logout-btn {
+	position: absolute;
+	top: 0;
+	left: 20%;
+}
+
 
   @media screen and (max-width: 1150px) {
 	.vertical_latest {

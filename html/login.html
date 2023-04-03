@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="UTF-8" />
+    <!--<meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Be SpotReal</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth-compat.js"></script>
+ </head>
+ <body>
+
+<div class="form">
+  <div class="email"> 
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Email">
+  </div>
+  <div class="pass">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Password">
+  </div>
+  <button id="submit-btn" onclick="signUp()">Sign Up</button>
+  <button id="submit-btn" onclick="signIn()">Sign In</button>
+</div>
+<label for="remember-me">Remember me</label>
+<input type="checkbox" id="remember-me">
+
+<script src="../js/login.js"></script>
+</body>
+ </html>

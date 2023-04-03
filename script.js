@@ -11,7 +11,7 @@ const createWindow = () => {
     },
   });
   win.setMinimumSize(920, 590);
-  win.loadFile('index.html');
+  win.loadFile('html/login.html');
 };
 
 
