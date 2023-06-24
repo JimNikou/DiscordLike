@@ -1,8 +1,9 @@
 <!DOCTYPE html>
- <html>
- <head>
-    <meta charset="UTF-8" />
-    <!--<meta
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!--<meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
@@ -11,187 +12,222 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Be SpotReal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be SpotReal</title>
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-     
-     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-<link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
- </head>
- <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   
-  
-  
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script type="module" src="/node_modules/youtube-video-js/dist/youtube-video.js"></script>
+</head>
+
+<body>
+
+
   <button id="logout-btn" onclick="logout()">Log Out</button>
-     <div id="sidebar">
-      <div class="menu-btn-1" onclick="menuBtnFunction(this)" draggable="false">
-        <span draggable="false"></span>
-      </div>
-      
-         <ul>
-          <div class="home_icon"><li><a href="#">Home<i class="fa fa-home" aria-hidden="true"></i></a></li></div>
-          <div class="saved_icon"><li><a href="#">Saved<i class="fa fa-save" aria-hidden="true"></i></a></li>
-          <div class="bookmarked_icon"><li><a href="#">Bookmarks<i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
-          <div class="search_icon"><li><a href="./html/discover.html">Discover<i class="fa fa-globe" aria-hidden="true"></i></a></li></div>
-          <div class="about_icon"><li><a href="#">About Us<i class="fa fa-info" aria-hidden="true"></i></a></li>
-          <div class="contact_icon"><li><a href="#">Contact<i class="fa fa-at" aria-hidden="true"></i></a></li>
-         </ul>
-     </div>
-     <p id="info">test</p>
- 
-     <div class="main_text">
-      <div class="line_above_text">
-        <img src="./home_page_images/line_above_text.png" alt="line_above_text">
-      </div>
-       <h3>Enhance</h3>
-       <h3>your day</h3>
-       <h3>with music.</h3>
-       <h1>Make you day more lively with a variety of</h1>
-       <h1>music that suits your mood, and try premium</h1>
-       <h1>to get a variety of better features.</h1>
-       <button class="try_premium">Try Premium<img src="./home_page_images/right.png" alt="arrow_up_right"></button>
-       <button class="view_plans">View Plans<img src="./home_page_images/right.png" alt="arrow_up_right"></button>
-     </div>
-
-     
-     <div class="home_artist">
-       <div class="vertical_latest">LATEST AND GREATEST MUSICIANS READY TO DISCOVER.</div>
-      <div class="tape-top">
-        <img src="./home_page_images/tape.png" alt="tape-top" width="200" height="200">
-      </div>
-      <img src="./home_page_images/Metro-2.png" alt="Description of the image" width="500" height="500" />
-      <div class="tape-bottom">
-        <img src="./home_page_images/tape.png" alt="tape-bottom" width="200" height="200">
-      </div>
+  <div id="sidebar">
+    <div class="menu-btn-1" onclick="menuBtnFunction(this)" draggable="false">
+      <span draggable="false"></span>
     </div>
 
+    <ul>
+      <div class="home_icon">
+        <li><a href="#">Home<i class="fa fa-home" aria-hidden="true"></i></a></li>
+      </div>
+      <div class="saved_icon">
+        <li><a href="#">Saved<i class="fa fa-save" aria-hidden="true"></i></a></li>
+      </div>
+      <div class="bookmarked_icon">
+        <li><a href="#">Bookmarks<i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
+      </div>
+      <div class="search_icon">
+        <li><a href="./html/discover.html">Discover<i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      </div>
+      <div class="about_icon">
+        <li><a href="#">About Us<i class="fa fa-info" aria-hidden="true"></i></a></li>
+      </div>
+      <div class="contact_icon">
+        <li><a href="#">Contact<i class="fa fa-at" aria-hidden="true"></i></a></li>
+      </div>
+    </ul>
+  </div>
+  <p id="info">test</p>
 
-    <div class="horizontal-line"></div>
-    <div class="secondary_text">
-      <h3>Popular from all</h3>
-      <h3>over the world.</h3>
-      <h1>Find the most heard and trending</h1>
-      <h1>songs, enjoy them with millions of other</h1>
-      <h1>users from all around the world.</h1>
+  <div class="main_text">
+    <div class="line_above_text">
+      <img src="./home_page_images/line_above_text.png" alt="line_above_text">
     </div>
-    <div class="secondary_text_popular">
-      <h2>Popular Artists:</h2>
+    <h3>Enhance</h3>
+    <h3>your day</h3>
+    <h3>with music.</h3>
+    <h1>Make you day more lively with a variety of</h1>
+    <h1>music that suits your mood, and try premium</h1>
+    <h1>to get a variety of better features.</h1>
+    <button class="try_premium">Try Premium<img src="./home_page_images/right.png" alt="arrow_up_right"></button>
+    <button class="view_plans">View Plans<img src="./home_page_images/right.png" alt="arrow_up_right"></button>
+  </div>
+
+
+  <div class="home_artist">
+    <div class="vertical_latest">LATEST AND GREATEST MUSICIANS READY TO DISCOVER.</div>
+    <div class="tape-top">
+      <img src="./home_page_images/tape.png" alt="tape-top" width="200" height="200">
     </div>
-
-    <div class="popular_artists">
-      <div class="popular_artist">
-        <img src="./home_page_images/Drake.png" alt="tape-bottom" width="300" height="300">
-        <h2>Artist 1</h2>
-        <p>Some text here...</p>
-      </div>
-      <div class="popular_artist">
-        <img src="./home_page_images/Tay.png" alt="tape-bottom" width="300" height="300">
-        <h2>Artist 2</h2>
-        <p>Some text here...</p>
-      </div>
-      <div class="popular_artist">
-        <img src="./home_page_images/Weeknd.png" alt="tape-bottom" width="300" height="300">
-        <h2>Artist 3</h2>
-        <p>Some text here...</p>
-      </div>
+    <img src="./home_page_images/Metro-2.png" alt="Description of the image" width="500" height="500" />
+    <div class="tape-bottom">
+      <img src="./home_page_images/tape.png" alt="tape-bottom" width="200" height="200">
     </div>
+  </div>
 
-    <div class="music-player">
-      <div class="controls">
-        <button id="play-btn" onclick="playPause()"><i class="fa fa-play"></i></button>
-        <button id="mute-btn" onclick="mute()"><i class="fa fa-volume-up"></i></button>
-        <button id="stop-btn" onclick="stop()"><i class="fa fa-stop"></i></button>
-      </div>
-      <div class="progress-bar" onclick="setProgress(event)">
-        <div class="progress"></div>
-        <p class="text_progress">0.0</p>
-      </div>
-      <div class="song-title"></div>
-      <audio id="audio" type="audio/mp3" src="one.mp3"></audio>
+
+  <div class="horizontal-line"></div>
+  <div class="secondary_text">
+    <h3>Popular from all</h3>
+    <h3>over the world.</h3>
+    <h1>Find the most heard and trending</h1>
+    <h1>songs, enjoy them with millions of other</h1>
+    <h1>users from all around the world.</h1>
+  </div>
+  <div class="secondary_text_popular">
+    <h2>Popular Artists:</h2>
+  </div>
+
+  <div class="popular_artists">
+    <div class="popular_artist">
+      <img src="./home_page_images/Drake.png" alt="tape-bottom" width="300" height="300">
+      <h2>Artist 1</h2>
+      <p>Some text here...</p>
     </div>
-    
-    <script>
-      const audio = document.getElementById('audio');
-      const playBtn = document.getElementById('play-btn');
-      const stopBtn = document.getElementById('stop-btn');
-      const muteBtn = document.getElementById('mute-btn');
-      const songTitle = document.querySelector('.song-title');
-      const progressBar = document.querySelector('.progress');
-      const progressContainer = document.querySelector('.progress-bar');
-      const timeDisplay = document.querySelector('.text_progress');
-      
-      let isPlaying = false;
-      let isMuted = false;
-    
-      function updateProgressBar() {
-        const { currentTime, duration } = audio;
-        progressBar.style.width = `${(currentTime / duration) * 100}%`;
+    <div class="popular_artist">
+      <img src="./home_page_images/Tay.png" alt="tape-bottom" width="300" height="300">
+      <h2>Artist 2</h2>
+      <p>Some text here...</p>
+    </div>
+    <div class="popular_artist">
+      <img src="./home_page_images/Weeknd.png" alt="tape-bottom" width="300" height="300">
+      <h2>Artist 3</h2>
+      <p>Some text here...</p>
+    </div>
+  </div>
 
-        const currentMinutes = Math.floor(currentTime / 60);
-        const currentSeconds = Math.floor(currentTime % 60);
-        const durationMinutes = Math.floor(duration / 60);
-        const durationSeconds = Math.floor(duration % 60);
 
-        // display current time
-        const currentTimeFormatted = `${currentMinutes}:${currentSeconds < 10 ? '0' + currentSeconds : currentSeconds}`;
+        
 
-        // display duration
-        const durationFormatted = `${durationMinutes}:${durationSeconds < 10 ? '0' + durationSeconds : durationSeconds}`;
-        timeDisplay.innerHTML = `${currentTimeFormatted} / ${durationFormatted}`;
-      }
+        <button onclick="youTubePlayerPlay();">Play</button>
+        <button onclick="youTubePlayerPause();">Pause</button>
+        <button onclick="youTubePlayerStop();">Stop</button>
+
+        <input id="YouTube-player-progress" type="range" value="0" min="0" max="100" onchange="youTubePlayerCurrentTimeChange(this.value);" oninput="youTubePlayerCurrentTimeSlide();">
+
+        <input id="YouTube-player-volume" type="range" value="100" min="0" max="100" onchange="youTubePlayerVolumeChange(this.value);">
+
+
+
+  <div class="music-player">
+    <div class="controls">
+      <button id="play-btn" onclick="playPause()"><i class="fa fa-play"></i></button>
+      <button id="mute-btn" onclick="mute()"><i class="fa fa-volume-up"></i></button>
+      <button id="stop-btn" onclick="youTubePlayerStop()"><i class="fa fa-stop"></i></button>
+    </div>
+    <input class="progress-bar" id="YouTube-player-progress" type="range" value="0" min="0" max="100" onchange="youTubePlayerCurrentTimeChange(this.value);" oninput="youTubePlayerCurrentTimeSlide();">
+    <!-- <div class="progress-bar" onclick="setProgress(event)"> -->
+      <!-- <div class="progress"></div> -->
+      <!-- <p class="text_progress">0.0</p> -->
+    <!-- </div> -->
+    <div class="song-title"></div>
+    <p style="display: none;" id="YouTube-video-id" value="" onchange="youTubePlayerChangeVideoId();">
+    <div style="display: none;" id="YouTube-player">
+      <youtube-video
+      width="640"
+      height="360"
+      src="https://www.youtube.com/watch?v=MyK6uc83gRc"
+      autoplay
+      controls
+      />
+    </div>
+    <!-- <audio id="audio" type="audio/mp3" src="https://www.youtube.com/watch?v=7wtfhZwyrcc"></audio> -->
+  </div>
+
+  <script>
+    /*
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('play-btn');
+    const stopBtn = document.getElementById('stop-btn');
+    const muteBtn = document.getElementById('mute-btn');
+    const songTitle = document.querySelector('.song-title');
+    const progressBar = document.querySelector('.progress');
+    const progressContainer = document.querySelector('.progress-bar');
+    const timeDisplay = document.querySelector('.text_progress');
     
-      function playPause() {
-        if (!isPlaying) {
-          audio.play();
-          isPlaying = true;
-          playBtn.innerHTML = '<i class="fa fa-pause"></i>';
-        } else {
-          audio.pause();
-          isPlaying = false;
-          playBtn.innerHTML = '<i class="fa fa-play"></i>';
-        }
-      }
-    
-      function mute() {
-        if (!isMuted) {
-          audio.muted = true;
-          isMuted = true;
-          muteBtn.innerHTML = '<i class="fa fa-volume-off"></i>';
-        } else {
-          audio.muted = false;
-          isMuted = false;
-          muteBtn.innerHTML = '<i class="fa fa-volume-up"></i>';
-        }
-      }
-    
-      function stop() {
-        audio.currentTime = 0;
+    let isPlaying = false;
+    let isMuted = false;
+  
+    function updateProgressBar() {
+      const { currentTime, duration } = audio;
+      progressBar.style.width = `${(currentTime / duration) * 100}%`;
+
+      const currentMinutes = Math.floor(currentTime / 60);
+      const currentSeconds = Math.floor(currentTime % 60);
+      const durationMinutes = Math.floor(duration / 60);
+      const durationSeconds = Math.floor(duration % 60);
+
+      // display current time
+      const currentTimeFormatted = `${currentMinutes}:${currentSeconds < 10 ? '0' + currentSeconds : currentSeconds}`;
+
+      // display duration
+      const durationFormatted = `${durationMinutes}:${durationSeconds < 10 ? '0' + durationSeconds : durationSeconds}`;
+      timeDisplay.innerHTML = `${currentTimeFormatted} / ${durationFormatted}`;
+    }
+  
+    function playPause() {
+      if (!isPlaying) {
+        audio.play();
+        isPlaying = true;
+        playBtn.innerHTML = '<i class="fa fa-pause"></i>';
+      } else {
         audio.pause();
         isPlaying = false;
         playBtn.innerHTML = '<i class="fa fa-play"></i>';
-        progressBar.style.width = '0%';
       }
-    
-      function setProgress(e) {
-        const width = progressContainer.clientWidth;
-        const clickX = e.offsetX;
-        const duration = audio.duration;
-        audio.currentTime = (clickX / width) * duration;
+    }
+  
+    function mute() {
+      if (!isMuted) {
+        audio.muted = true;
+        isMuted = true;
+        muteBtn.innerHTML = '<i class="fa fa-volume-off"></i>';
+      } else {
+        audio.muted = false;
+        isMuted = false;
+        muteBtn.innerHTML = '<i class="fa fa-volume-up"></i>';
       }
-    
-      audio.addEventListener('timeupdate', updateProgressBar);
-    
-    </script>
-    <!-- <div class="music-player">
+    }
+  
+    function stop() {
+      audio.currentTime = 0;
+      audio.pause();
+      isPlaying = false;
+      playBtn.innerHTML = '<i class="fa fa-play"></i>';
+      progressBar.style.width = '0%';
+    }
+  
+    function setProgress(e) {
+      const width = progressContainer.clientWidth;
+      const clickX = e.offsetX;
+      const duration = audio.duration;
+      audio.currentTime = (clickX / width) * duration;
+    }
+  
+    audio.addEventListener('timeupdate', updateProgressBar);*/
+
+  </script>
+  <!-- <div class="music-player">
       <div class="controls">
         <button id="play-btn" onclick="playPause()"><i class="fa fa-play"></i></button>
         <button id="mute-btn" onclick="muteSong()"><i class="fa fa-volume-up"></i></button>
@@ -219,12 +255,13 @@
       progressBar = document.getElementById("progress");
       
     </script> -->
-    
-     <script src="./js/login.js"></script>
-     <script src="./js/nav-bar.js"></script>
-     <script src="./renderer.js"></script>
-     
 
- </body>
- </html>
- 
+  <!-- <script src="./js/login.js"></script> -->
+  <!-- <script src="./js/nav-bar.js"></script> -->
+  <!-- <script src="./js/play.js"></script> -->
+  <script src="./renderer.js"></script>
+
+
+</body>
+
+</html>

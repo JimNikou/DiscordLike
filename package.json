@@ -4,15 +4,25 @@
   "description": "An alterative to Discord, or so called DiscordLike made by students",
   "main": "script.js",
   "scripts": {
+    "startnode": "node script.js",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jim Nikou and Konstantinos Mokas",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^23.2.1"
+    "electron": "^14.2.9",
+    "electron-rebuild": "^3.2.9"
   },
   "dependencies": {
-    "firebase": "^9.19.1"
+    "firebase": "^9.19.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "fluent-ffmpeg-util": "^0.2.0-alpha.1",
+    "jquery": "^3.6.4",
+    "speaker": "^0.5.4",
+    "yt-player": "^3.6.1",
+    "yt-search": "^2.10.4",
+    "yt-stream": "^1.4.3",
+    "ytdl-core": "^4.11.4"
   }
 }

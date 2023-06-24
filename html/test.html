@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../js/test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <iframe src="https://www.youtube.com/embed?v=LSIOcCcEVaE" frameborder="0"></iframe>
+        <p id="YouTube-video-id" value="" onchange="youTubePlayerChangeVideoId();">
+        <div id="YouTube-player"></div>
+
+        <button onclick="playPause();">Play</button>
+        <button onclick="youTubePlayerPause();">Pause</button>
+        <button onclick="youTubePlayerStop();">Stop</button>
+
+        <input id="YouTube-player-progress" type="range" value="0" min="0" max="100" onchange="youTubePlayerCurrentTimeChange(this.value);" oninput="youTubePlayerCurrentTimeSlide();">
+
+        <input id="YouTube-player-volume" type="range" value="50" min="0" max="100" onchange="youTubePlayerVolumeChange(this.value);">
+
+    <span class="nowrap">
+        <button onclick="document.getElementById('YouTube-video-id').value='F2Ug3VkFuDw'; youTubePlayerChangeVideoId('F2Ug3VkFuDw');" title="Peter Popoff pris la main dans le sac par James Randi">2</button>
+        <button onclick="document.getElementById('YouTube-video-id').value='YVkUvmDQ3HY'; youTubePlayerChangeVideoId('LSIOcCcEVaE');" title="The Steven Seagal Show #002">3</button>
+      </span>
+</body>
+</html>
+
+
+
+<!-- 
+<main>
+    <section>
+      <div class="center">
+  
+        <div id="YouTube-player"></div>
+  
+        <div>
+          <span class="nowrap">
+            <button onclick="document.getElementById('YouTube-video-id').value='yG0oBPtyNb0'; youTubePlayerChangeVideoId();" title="In the summertime (Mungo Jerry)">1</button>
+            <button onclick="document.getElementById('YouTube-video-id').value='F2Ug3VkFuDw'; youTubePlayerChangeVideoId();" title="Peter Popoff pris la main dans le sac par James Randi">2</button>
+            <button onclick="document.getElementById('YouTube-video-id').value='1X9RvuSuU_Y'; youTubePlayerChangeVideoId();" title="The Steven Seagal Show #002">3</button>
+            <button onclick="document.getElementById('YouTube-video-id').value='LHdsMXEwLNE'; youTubePlayerChangeVideoId();" title="The Man from Earth (Richard Schenkman)">4</button>
+          </span>
+  
+          <span class="nowrap margin-left-m margin-right-m">
+            <label for="YouTube-video-id">videoId</label>:
+            <input id="YouTube-video-id" type="text" value="yG0oBPtyNb0" size="12" pattern="[_\-0-9A-Za-z]{11}" onchange="youTubePlayerChangeVideoId();">
+          </span>
+  
+          <span class="nowrap">
+            <button onclick="youTubePlayerPlay();">Play</button>
+            <button onclick="youTubePlayerPause();">Pause</button>
+            <button onclick="youTubePlayerStop();">Stop</button>
+          </span>
+        </div>
+  
+        <div>
+          <input id="YouTube-player-progress" type="range" value="0" min="0" max="100" onchange="youTubePlayerCurrentTimeChange(this.value);" oninput="youTubePlayerCurrentTimeSlide();">
+          <label for="YouTube-player-progress">duration</label>
+        </div>
+  
+        <div>
+          <input id="YouTube-player-volume" type="range" value="50" min="0" max="100" onchange="youTubePlayerVolumeChange(this.value);">
+          <label for="YouTube-player-volume">volume</label>
+        </div>
+      </div>
+  
+      <div class="framed">
+        <div id="YouTube-player-infos"></div>
+        <div id="YouTube-player-errors"></div>
+        <div id="YouTube-player-fixed-infos"></div>
+      </div>
+    </section>
+  
+    
+  </main> -->

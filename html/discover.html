@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/discover.css">
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Discover</title>
 </head>
 <body>
@@ -25,15 +26,33 @@
     </div>
     <div class="search_bar">
         <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text">
+        <input type="text" onkeydown="search(event)">
     </div>
     
     <div class="main" id="main">
+    </div>
+
+    <div class="music-player">
+        <div class="controls">
+          <button id="play-btn" onclick="playPause()"><i class="fa fa-play"></i></button>
+          <button id="mute-btn" onclick="mute()"><i class="fa fa-volume-up"></i></button>
+          <button id="stop-btn" onclick="youTubePlayerStop()"><i class="fa fa-stop"></i></button>
+        </div>
+        <input class="progress-bar" id="YouTube-player-progress" type="range" value="0" min="0" max="100" onchange="youTubePlayerCurrentTimeChange(this.value);" oninput="youTubePlayerCurrentTimeSlide();">
+        <!-- <div class="progress-bar" onclick="setProgress(event)"> -->
+          <!-- <div class="progress"></div> -->
+          <!-- <p class="text_progress">0.0</p> -->
+        <!-- </div> -->
+        <div class="song-title"></div>
+        <!-- <p style="display: none;" id="YouTube-video-id" value="" onchange="youTubePlayerChangeVideoId('');"> -->
+        <div style="display: none;" id="YouTube-player"></div>
+        <!-- <audio id="audio" type="audio/mp3" src="https://www.youtube.com/watch?v=7wtfhZwyrcc"></audio> -->
     </div>
     
     <script src="../js/load_categories.js"></script>
     <script src="../js/nav-bar.js"></script>
     <script src="../renderer.js"></script>
+    <script src="../js/play.js"></script>
 
 </body>
 </html>
